@@ -269,6 +269,7 @@ img {
 }
 .main-content .announce-trending > .trending > .trending-body {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-items: start;
   gap: 30px;
@@ -284,8 +285,8 @@ img {
   gap: 10px;
 }
 .main-content .announce-trending > .trending > .trending-body > .profile > img {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 .main-content .announce-trending > .trending > .trending-body > .profile > .description > .tag {
   font-size: 0.8rem;
