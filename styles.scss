@@ -30,6 +30,7 @@ button {
 
 $primary-color: rgb(24, 146, 222);
 $secondary-color: rgb(255, 200, 0);
+$background-color: white;
 $main-padding-side: 0px 20px 0px 20px;
 $shadow: 0px 16px 12px -8px #bebebe;
 $gray-text: rgb(156, 156, 156);
@@ -57,7 +58,7 @@ hr {
   display: grid;
   padding: 20px;
   gap: 20px;
-  color: white;
+  color: $background-color;
   background-color: $primary-color;
   height: 100%;
   width: 250px;
@@ -142,7 +143,7 @@ hr {
           font-size: 0.75rem;
           font-weight: 600;
           background-color: $primary-color;
-          color: white;
+          color: $background-color;
           border-radius: 1000px;
           width: 90px;
           height: 35px;
@@ -163,6 +164,7 @@ hr {
     z-index: 1;
     .projects {
       > h1 {
+        font-size: 18px;
         padding-bottom: 20px;
       }
       .cards {
@@ -174,8 +176,8 @@ hr {
           display: grid;
           grid-template-rows: 1fr 4fr 1fr;
           padding: 40px 20px 40px 20px;
-          background-color: white;
-          border-radius: 16px;
+          background-color: $background-color;
+          border-radius: 10px;
           border-left-style: solid;
           border-color: $secondary-color;
           border-width: 10px;
@@ -201,25 +203,50 @@ hr {
   .announce-trending {
     display: grid;
     grid-template-rows: 1fr 1fr;
-  }
-  .announcements {
-    display: grid;
-    gap: 20px;
-    > .announcements-body {
-      display: grid;
-      gap: 20px;
-      background-color: white;
-      border-radius: 16px;
-      padding: 40px;
-      > .announcement {
-        > h1 {
-          font-size: 0.8rem;
+    > .announcements {
+      > h1 {
+        padding-bottom: 20px;
+      }
+      > .announcements-body {
+        display: grid;
+        gap: 20px;
+        background-color: $background-color;
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: $shadow;
+
+        > .announcement {
+          > h1 {
+            font-size: 0.8rem;
+          }
+          > p {
+            font-size: 0.7rem;
+            color: $gray-text;
+          }
         }
-        > p {
-          font-size: 0.7rem;
-          color: $gray-text;
+      } //announcements-body
+    } //announcements
+    > .trending {
+      > h1 {
+        padding-top: 25px;
+        padding-bottom: 20px;
+      }
+      > .trending-body {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        background-color: $background-color;
+        min-height: 350px;
+        > .profile {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
         }
       }
     }
-  }
+  } //announce+trending
 } //main-content
