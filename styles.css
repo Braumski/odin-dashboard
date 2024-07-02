@@ -142,10 +142,10 @@ img {
   outline: none;
 }
 .main-content .main-nav-user-actions .main-nav .user-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 16px;
 }
 .main-content .main-nav-user-actions .main-nav .user-nav > li > img {
   width: 50px;
