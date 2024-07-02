@@ -46,6 +46,11 @@ hr {
   border-top: 2px solid rgb(224, 231, 235);
 }
 
+svg {
+  width: 25px;
+  height: 25px;
+}
+
 .sidebar-nav-container {
   height: 100%;
   background-color: rgb(24, 146, 222);
@@ -63,9 +68,15 @@ hr {
   font-weight: 700;
 }
 .sidebar-nav-container > .sidebar-nav .main-logo {
-  display: grid;
+  display: flex;
   align-items: center;
+  gap: 15px;
   font-size: 1.3rem;
+}
+.sidebar-nav-container > .sidebar-nav svg {
+  fill: white;
+  width: 40px;
+  height: 40px;
 }
 .sidebar-nav-container > .sidebar-nav > ul {
   display: grid;
@@ -75,6 +86,17 @@ hr {
 .sidebar-nav-container > .sidebar-nav .sidebar-sec2 {
   display: grid;
   gap: 20px;
+}
+.sidebar-nav-container > .sidebar-nav .sidebar-sec1 > li,
+.sidebar-nav-container > .sidebar-nav .sidebar-sec2 > li {
+  display: flex;
+  gap: 16px;
+}
+.sidebar-nav-container > .sidebar-nav .sidebar-sec1 > li svg,
+.sidebar-nav-container > .sidebar-nav .sidebar-sec2 > li svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
 }
 
 .main-content .main-nav-user-actions {
@@ -94,17 +116,28 @@ hr {
 }
 .main-content .main-nav-user-actions .main-nav .search {
   display: grid;
-  grid-template-columns: 1fr 12fr;
+  grid-template-columns: 1fr 30fr;
+  align-items: center;
   gap: 10px;
 }
+.main-content .main-nav-user-actions .main-nav .search > svg {
+  width: 20px;
+  height: 20px;
+}
 .main-content .main-nav-user-actions .main-nav .search .search-field {
+  border: none;
+  padding: 8px;
   max-width: 500px;
   border-radius: 100px;
   background-color: rgb(224, 231, 235);
 }
+.main-content .main-nav-user-actions .main-nav .search .search-field:active {
+  border: none;
+}
 .main-content .main-nav-user-actions .main-nav .user-nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   gap: 12px;
 }
 .main-content .main-nav-user-actions .user-actions-bar {
@@ -176,10 +209,10 @@ hr {
   height: 250px;
 }
 .main-content .summary .projects .cards .card > h1 {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 .main-content .summary .projects .cards .card > p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: rgb(156, 156, 156);
 }
 .main-content .summary .projects .cards .card > .card-buttons {
@@ -202,6 +235,7 @@ hr {
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0px 16px 12px -8px #bebebe;
+  height: 82%;
 }
 .main-content .announce-trending > .announcements > .announcements-body > .announcement > h1 {
   font-size: 0.8rem;
@@ -211,22 +245,21 @@ hr {
   color: rgb(156, 156, 156);
 }
 .main-content .announce-trending > .trending > h1 {
-  padding-top: 25px;
   padding-bottom: 20px;
 }
 .main-content .announce-trending > .trending > .trending-body {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 16px 12px -8px #bebebe;
   background-color: white;
-  min-height: 350px;
+  min-height: 373px;
 }
 .main-content .announce-trending > .trending > .trending-body > .profile {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }/*# sourceMappingURL=styles.css.map */
