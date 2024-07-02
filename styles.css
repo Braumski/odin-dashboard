@@ -115,14 +115,14 @@ img {
 }
 .main-content .main-nav-user-actions .main-nav {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   align-items: center;
   padding: 0px 20px 0px 20px;
-  gap: 20px;
+  gap: px;
 }
 .main-content .main-nav-user-actions .main-nav .search {
   display: grid;
-  grid-template-columns: 1fr 25fr;
+  grid-template-columns: 1fr 20fr;
   align-items: center;
   gap: 10px;
 }
@@ -135,7 +135,7 @@ img {
   border: none;
   padding: 8px 16px 8px 16px;
   max-width: 500px;
-  border-radius: 100px;
+  border-radius: 50px;
   background-color: rgb(224, 231, 235);
 }
 .main-content .main-nav-user-actions .main-nav .search .search-field:focus {
@@ -253,7 +253,7 @@ img {
   gap: 20px;
   background-color: white;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0px 16px 12px -8px #bebebe;
   height: 82%;
 }
@@ -272,7 +272,7 @@ img {
   justify-content: start;
   align-items: start;
   gap: 30px;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 16px 12px -8px #bebebe;
   background-color: white;
@@ -281,12 +281,16 @@ img {
 .main-content .announce-trending > .trending > .trending-body > .profile {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 .main-content .announce-trending > .trending > .trending-body > .profile > img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 .main-content .announce-trending > .trending > .trending-body > .profile > .description > .tag {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
+}
+.main-content .announce-trending > .trending > .trending-body > .profile > .description > .subtitle {
+  font-size: 0.9rem;
+  color: rgb(156, 156, 156);
 }/*# sourceMappingURL=styles.css.map */

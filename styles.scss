@@ -119,13 +119,13 @@ img {
     padding-right: 40px;
     .main-nav {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2.5fr 1fr;
       align-items: center;
       padding: $main-padding-side;
-      gap: 20px;
+      gap: px;
       .search {
         display: grid;
-        grid-template-columns: 1fr 25fr;
+        grid-template-columns: 1fr 20fr;
         align-items: center;
         gap: 10px;
         > svg {
@@ -137,7 +137,7 @@ img {
           border: none;
           padding: 8px 16px 8px 16px;
           max-width: 500px;
-          border-radius: 100px;
+          border-radius: 50px;
           background-color: $gray-background;
           &:focus {
             outline: none;
@@ -263,7 +263,7 @@ img {
         gap: 20px;
         background-color: $background-color;
         border-radius: 10px;
-        padding: 40px;
+        padding: 20px;
         box-shadow: $shadow;
         height: 82%;
 
@@ -287,7 +287,7 @@ img {
         justify-content: start;
         align-items: start;
         gap: 30px;
-        padding: 40px;
+        padding: 20px;
         border-radius: 10px;
         box-shadow: $shadow;
         background-color: $background-color;
@@ -295,14 +295,18 @@ img {
         > .profile {
           display: flex;
           align-items: center;
-          gap: 30px;
+          gap: 10px;
           > img {
-            width: 50px;
-            height: 50px;
+            width: 70px;
+            height: 70px;
           }
           > .description {
             > .tag {
-              font-size: 0.5rem;
+              font-size: 0.8rem;
+            }
+            > .subtitle {
+              font-size: 0.9rem;
+              color: $gray-text;
             }
           }
         }
