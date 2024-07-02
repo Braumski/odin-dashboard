@@ -282,4 +282,11 @@ img {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.main-content .announce-trending > .trending > .trending-body > .profile > img {
+  width: 50px;
+  height: 50px;
+}
+.main-content .announce-trending > .trending > .trending-body > .profile > .description > .tag {
+  font-size: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

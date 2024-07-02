@@ -296,6 +296,15 @@ img {
           display: flex;
           align-items: center;
           gap: 30px;
+          > img {
+            width: 50px;
+            height: 50px;
+          }
+          > .description {
+            > .tag {
+              font-size: 0.5rem;
+            }
+          }
         }
       }
     }
