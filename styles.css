@@ -46,33 +46,35 @@ hr {
   border-top: 2px solid rgb(224, 231, 235);
 }
 
-.sidebar-nav {
-  display: grid;
-  padding: 20px;
-  gap: 20px;
-  color: white;
-  background-color: rgb(24, 146, 222);
+.sidebar-nav-container {
   height: 100%;
+  background-color: rgb(24, 146, 222);
+}
+.sidebar-nav-container > .sidebar-nav {
+  display: grid;
+  padding: 30px;
+  gap: 60px;
+  color: white;
   width: 250px;
   position: relative;
   z-index: 3;
 }
-.sidebar-nav * {
+.sidebar-nav-container > .sidebar-nav * {
   font-weight: 700;
 }
-.sidebar-nav .main-logo {
+.sidebar-nav-container > .sidebar-nav .main-logo {
   display: grid;
   align-items: center;
-  height: 75px;
+  font-size: 1.3rem;
 }
-.sidebar-nav > ul {
+.sidebar-nav-container > .sidebar-nav > ul {
   display: grid;
-  gap: 60px;
+  gap: 50px;
 }
-.sidebar-nav .sidebar-sec1,
-.sidebar-nav .sidebar-sec2 {
+.sidebar-nav-container > .sidebar-nav .sidebar-sec1,
+.sidebar-nav-container > .sidebar-nav .sidebar-sec2 {
   display: grid;
-  gap: 14px;
+  gap: 20px;
 }
 
 .main-content .main-nav-user-actions {
