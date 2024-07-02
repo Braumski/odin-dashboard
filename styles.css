@@ -59,7 +59,7 @@ img {
 
 .sidebar-nav-container {
   height: 100%;
-  background-color: rgb(24, 146, 222);
+  background-color: rgb(24, 126, 222);
 }
 .sidebar-nav-container > .sidebar-nav {
   display: grid;
@@ -188,7 +188,7 @@ img {
 .main-content .main-nav-user-actions .user-actions-bar .user-actions > button {
   font-size: 0.75rem;
   font-weight: 600;
-  background-color: rgb(24, 146, 222);
+  background-color: rgb(24, 126, 222);
   color: white;
   border-radius: 1000px;
   width: 90px;
@@ -222,7 +222,7 @@ img {
   background-color: white;
   border-radius: 10px;
   border-left-style: solid;
-  border-color: rgb(255, 200, 0);
+  border-color: rgb(149, 233, 101);
   border-width: 10px;
   box-shadow: 0px 16px 12px -8px #bebebe;
   height: 250px;
