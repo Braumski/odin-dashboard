@@ -20,6 +20,7 @@ html {
 }
 
 button {
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -51,6 +52,11 @@ svg {
   height: 25px;
 }
 
+img {
+  width: 40px;
+  height: 40px;
+}
+
 .sidebar-nav-container {
   height: 100%;
   background-color: rgb(24, 146, 222);
@@ -64,7 +70,7 @@ svg {
   position: relative;
   z-index: 3;
 }
-.sidebar-nav-container > .sidebar-nav * {
+.sidebar-nav-container > .sidebar-nav > * {
   font-weight: 700;
 }
 .sidebar-nav-container > .sidebar-nav .main-logo {
@@ -73,7 +79,7 @@ svg {
   gap: 15px;
   font-size: 1.3rem;
 }
-.sidebar-nav-container > .sidebar-nav svg {
+.sidebar-nav-container > .sidebar-nav #main-logo {
   fill: white;
   width: 40px;
   height: 40px;
@@ -109,36 +115,45 @@ svg {
 }
 .main-content .main-nav-user-actions .main-nav {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   padding: 0px 20px 0px 20px;
-  gap: 10vw;
+  gap: 20px;
 }
 .main-content .main-nav-user-actions .main-nav .search {
   display: grid;
-  grid-template-columns: 1fr 30fr;
+  grid-template-columns: 1fr 25fr;
   align-items: center;
   gap: 10px;
 }
 .main-content .main-nav-user-actions .main-nav .search > svg {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 .main-content .main-nav-user-actions .main-nav .search .search-field {
+  font-size: 18px;
   border: none;
-  padding: 8px;
+  padding: 8px 16px 8px 16px;
   max-width: 500px;
   border-radius: 100px;
   background-color: rgb(224, 231, 235);
 }
-.main-content .main-nav-user-actions .main-nav .search .search-field:active {
-  border: none;
+.main-content .main-nav-user-actions .main-nav .search .search-field:focus {
+  outline: none;
 }
 .main-content .main-nav-user-actions .main-nav .user-nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+}
+.main-content .main-nav-user-actions .main-nav .user-nav > li > img {
+  width: 50px;
+  height: 50px;
+}
+.main-content .main-nav-user-actions .main-nav .user-nav > li {
+  display: flex;
+  justify-content: center;
 }
 .main-content .main-nav-user-actions .user-actions-bar {
   display: grid;
@@ -154,6 +169,10 @@ svg {
   align-items: center;
   gap: 20px;
 }
+.main-content .main-nav-user-actions .user-actions-bar .icon-and-greeting > .user-icon {
+  width: 75px;
+  height: 75px;
+}
 .main-content .main-nav-user-actions .user-actions-bar .icon-and-greeting > .user-greeting {
   display: grid;
   gap: 4px;
@@ -166,7 +185,7 @@ svg {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.main-content .main-nav-user-actions .user-actions-bar .user-actions button {
+.main-content .main-nav-user-actions .user-actions-bar .user-actions > button {
   font-size: 0.75rem;
   font-weight: 600;
   background-color: rgb(24, 146, 222);
@@ -218,8 +237,9 @@ svg {
 .main-content .summary .projects .cards .card > .card-buttons {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 70px);
+  grid-template-columns: repeat(3, 50px);
   justify-content: end;
+  background-color: white;
 }
 .main-content .announce-trending {
   display: grid;

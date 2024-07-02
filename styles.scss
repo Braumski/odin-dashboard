@@ -23,6 +23,7 @@ html {
   width: 100%;
 }
 button {
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -58,6 +59,10 @@ svg {
   width: 25px;
   height: 25px;
 }
+img {
+  width: 40px;
+  height: 40px;
+}
 .sidebar-nav-container {
   height: 100%;
   background-color: $primary-color;
@@ -69,7 +74,7 @@ svg {
     width: 250px;
     position: relative;
     z-index: 3;
-    * {
+    > * {
       font-weight: 700;
     }
     .main-logo {
@@ -78,7 +83,7 @@ svg {
       gap: 15px;
       font-size: 1.3rem;
     }
-    svg {
+    #main-logo {
       fill: white;
       width: 40px;
       height: 40px;
@@ -114,36 +119,45 @@ svg {
     padding-right: 40px;
     .main-nav {
       display: grid;
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 2fr 1fr;
       align-items: center;
       padding: $main-padding-side;
-      gap: 10vw;
+      gap: 20px;
       .search {
         display: grid;
-        grid-template-columns: 1fr 30fr;
+        grid-template-columns: 1fr 25fr;
         align-items: center;
         gap: 10px;
         > svg {
-          width: 20px;
-          height: 20px;
+          width: 25px;
+          height: 25px;
         }
         .search-field {
+          font-size: 18px;
           border: none;
-          padding: 8px;
+          padding: 8px 16px 8px 16px;
           max-width: 500px;
           border-radius: 100px;
           background-color: $gray-background;
-          &:active {
-            border: none;
+          &:focus {
+            outline: none;
           }
         }
       }
 
       .user-nav {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 2fr;
         align-items: center;
-        gap: 12px;
+        justify-content: center;
+        > li > img {
+          width: 50px;
+          height: 50px;
+        }
+        > li {
+          display: flex;
+          justify-content: center;
+        }
       }
     } //main-nav
     .user-actions-bar {
@@ -158,6 +172,10 @@ svg {
         display: flex;
         align-items: center;
         gap: 20px;
+        > .user-icon {
+          width: 75px;
+          height: 75px;
+        }
         > .user-greeting {
           display: grid;
           gap: 4px;
@@ -171,7 +189,7 @@ svg {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        button {
+        > button {
           font-size: 0.75rem;
           font-weight: 600;
           background-color: $primary-color;
@@ -225,8 +243,9 @@ svg {
           > .card-buttons {
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: repeat(3, 70px);
+            grid-template-columns: repeat(3, 50px);
             justify-content: end;
+            background-color: $background-color;
           }
         } //card
       } //cards
